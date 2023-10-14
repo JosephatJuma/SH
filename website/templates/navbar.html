@@ -12,7 +12,7 @@
       aria-label="Toggle navigation"
       class="navbar-toggler"
     >
-      <i class="bi bi-bars"></i>
+      <i class="bi bi-list"></i>
     </button>
     <a href="{% url 'home' %}" class="navbar-brand">
       <h4>Staff Hierarchy</h4>
@@ -23,28 +23,23 @@
         <a
           href="#"
           role="button"
-          data-mdb-toggle="dropdown"
+          data-bs-toggle="dropdown"
           aria-expanded="false"
           class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow"
           id="navbarDropdownMenuLink"
         >
-          <i class="bi bi-gear-fill text-success rotate"></i>
+          <i class="bi bi-gear-fill text-success rotate-icon"></i>
         </a>
         <ul
           class="dropdown-menu dropdown-menu-end"
           aria-labelledby="navbarDropdownMenuLink"
         >
-          <li>
-            <a href="#" class="dropdown-item">Some news</a>
-          </li>
-          <li>
-            <a href="#" class="dropdown-item">Another news</a>
-          </li>
-          <li>
-            <a href="#" class="dropdown-item">Something else here</a>
-          </li>
+          <p class="dropdown-item-text">Configurations</p>
+          <hr />
+          <li class="bi bi-brightness-low dropdown-item">Change theme</li>
         </ul>
       </li>
+
       <button class="btn btn-success text-uppercase">
         Add Staff <i class="bi bi-person-plus-fill"></i>
       </button>

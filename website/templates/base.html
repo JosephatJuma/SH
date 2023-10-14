@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/css/dashboard.css" />
     <style>
       body {
-        background-color: #fbfbfb;
+        background-color: #f2ebeb;
         font-family: Roboto, "san-serif";
       }
       @media (min-width: 991.98px) {
@@ -78,6 +78,18 @@
       .dropdown-item p {
         text-align: left;
         align-self: flex-start;
+      }
+      .rotate-icon {
+        animation: rotate 5s linear infinite;
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
       }
       /* table {
   border-radius: 100px;
