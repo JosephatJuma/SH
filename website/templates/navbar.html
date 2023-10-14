@@ -1,0 +1,53 @@
+<nav
+  id="main-navbar"
+  class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top"
+>
+  <div class="container-fluid">
+    <button
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#sidebarMenu"
+      aria-controls="sidebarMenu"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      class="navbar-toggler"
+    >
+      <i class="bi bi-bars"></i>
+    </button>
+    <a href="{% url 'home' %}" class="navbar-brand">
+      <h4>Staff Hierarchy</h4>
+    </a>
+
+    <ul class="navbar-nav ms-auto d-flex flex-row">
+      <li class="nav-item dropdown">
+        <a
+          href="#"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+          class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow"
+          id="navbarDropdownMenuLink"
+        >
+          <i class="bi bi-gear-fill text-success rotate"></i>
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <li>
+            <a href="#" class="dropdown-item">Some news</a>
+          </li>
+          <li>
+            <a href="#" class="dropdown-item">Another news</a>
+          </li>
+          <li>
+            <a href="#" class="dropdown-item">Something else here</a>
+          </li>
+        </ul>
+      </li>
+      <button class="btn btn-success text-uppercase">
+        Add Staff <i class="bi bi-person-plus-fill"></i>
+      </button>
+    </ul>
+  </div>
+</nav>
